@@ -23,7 +23,7 @@ Lita.configure do |config|
     config.redis[:url] = ENV.fetch('REDIS_URL')
     config.adapters.slack.token = "xoxb-1466083074897-1438722039591-eLSdiJmMlBGWzkHODi8THXwq"
   else
-    config.robot.adapters = :shell
+    config.robot.adapter = :shell
   end
   config.adapters.slack.token = ENV.fetch("xoxb-1466083074897-1438722039591-eLSdiJmMlBGWzkHODi8THXwq", '')
   ## Example: Set options for the chosen adapter.
