@@ -21,11 +21,11 @@ Lita.configure do |config|
   if ENV['RACK_ENV'] == 'production'
     config.robot.adapter = :slack
     config.redis[:url] = ENV.fetch('REDIS_URL')
-    config.adapters.slack.token = "xoxb-1466083074897-1438722039591-eLSdiJmMlBGWzkHODi8THXwq"
+    config.adapters.slack.token = "xoxb-1466083074897-1438722039591-C1FLbxtqEyWBdlySQvNq3XwO"
   else
     config.robot.adapter = :shell
   end
-  config.adapters.slack.token = ENV.fetch("xoxb-1466083074897-1438722039591-eLSdiJmMlBGWzkHODi8THXwq", '')
+  config.adapters.slack.token = "xoxb-1466083074897-1438722039591-C1FLbxtqEyWBdlySQvNq3XwO"
   ## Example: Set options for the chosen adapter.
   # config.adapter.username = "myname"
   # config.adapter.password = "secret"
